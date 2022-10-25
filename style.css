@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.left{
+    position: relative;
+}
+
+.left-background {
+    height: 100vh;
+}
+
+.logo {
+  position: absolute;
+  top: 25vh;
+  left: 130px;
+  width: 450px;
+  height: auto;
+}
+
+.footer-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    color: white;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.right{
+    padding: 0 200px 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
