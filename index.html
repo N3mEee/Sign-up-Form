@@ -2,7 +2,13 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
-    <script src="./index.js"></script>
+    <script src="./index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,24 +40,71 @@
         <p>
           This is not a real online service! You know you need something like
           this in your life to help you realize your deepest dreams.
+          <br />Signup <span>now</span> to get started
         </p>
-        <p>Signup <span>now</span> to get started</p>
-        <p>You <span>know</span> you wnat to.</p>
+        <p>You <span>know</span> you want to.</p>
         <form>
-          <label for="username">FIRST NAME</label>
-          <input
-            type="text"
-            id="username"
-            name="username"
-            placeholder="Username"
-          />
-          <label for="username">LAST NAME</label>
-          <input
-            type="text"
-            id="username"
-            name="username"
-            placeholder="Username"
-          />
+          <div class="form-title">Let's do this!</div>
+              <ul>
+                <li>
+                  <label for="username">*FIRST NAME</label>
+                  <input
+                    type="text"
+                    id="firstname"
+                    name="firstname"
+                    placeholder="Marcel"
+                    required
+                  />
+                </li>
+                <li>
+                  <label for="email">*EMAIL</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="email@email.com"
+                    required
+                  />
+                </li>
+                <li>
+                  <label for="password">*PASSWORD</label>
+                  <input type="password" name="password" id="password" required />
+                </li>
+                <li>
+                  <label for="username">*LAST NAME</label>
+                  <input
+                    type="text"
+                    id="secondname"
+                    name="secondname"
+                    placeholder="Pavel"
+                    required
+                  />
+                </li>
+                <li>
+                  <label for="phonenumber">*PHONE NUMBER</label>
+                  <input
+                    type="tel"
+                    name="phonenumber"
+                    id="phonenumber"
+                    minlength="10"
+                    maxlength="10"
+                    inputmode="numeric"
+                    placeholder="07xxxxxxxx"
+                    required
+                  />
+                </li>
+                <li>
+                  <label for="confirm-password">*CONFIRM PASSWORD</label>
+                  <input
+                    type="password"
+                    name="confirm-password"
+                    id="confirm-password"
+                    required
+                  />
+                </li>
+              </ul>
+          <button type="submit">Create Account</button>
+          <h4>Already have an account? <a href="#">Log in</a></h4>
         </form>
       </div>
     </div>
