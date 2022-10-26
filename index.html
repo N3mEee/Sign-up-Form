@@ -49,10 +49,20 @@
                 <li>
                   <label for="username">*FIRST NAME</label>
                   <input
-                    type="text"
+                  type="text"
                     id="firstname"
                     name="firstname"
                     placeholder="Marcel"
+                    required
+                  />
+                </li>
+                <li>
+                  <label for="secondname">*LAST NAME</label>
+                  <input
+                    type="text"
+                    id="secondname"
+                    name="secondname"
+                    placeholder="Pavel"
                     required
                   />
                 </li>
@@ -64,34 +74,24 @@
                     id="email"
                     placeholder="email@email.com"
                     required
-                  />
-                </li>
+                    />
+                  </li>
+                  <li>
+                    <label for="phonenumber">*PHONE NUMBER</label>
+                    <input
+                      type="tel"
+                      name="phonenumber"
+                      id="phonenumber"
+                      minlength="10"
+                      maxlength="10"
+                      inputmode="numeric"
+                      placeholder="07xxxxxxxx"
+                      required
+                    />
+                  </li>
                 <li>
                   <label for="password">*PASSWORD</label>
                   <input type="password" name="password" id="password" required />
-                </li>
-                <li>
-                  <label for="username">*LAST NAME</label>
-                  <input
-                    type="text"
-                    id="secondname"
-                    name="secondname"
-                    placeholder="Pavel"
-                    required
-                  />
-                </li>
-                <li>
-                  <label for="phonenumber">*PHONE NUMBER</label>
-                  <input
-                    type="tel"
-                    name="phonenumber"
-                    id="phonenumber"
-                    minlength="10"
-                    maxlength="10"
-                    inputmode="numeric"
-                    placeholder="07xxxxxxxx"
-                    required
-                  />
                 </li>
                 <li>
                   <label for="confirm-password">*CONFIRM PASSWORD</label>
