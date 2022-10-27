@@ -5,6 +5,7 @@ body {
 }
 
 .container {
+  position: fixed;
   display: flex;
   flex-wrap: wrap;
   height: 100vh;
