@@ -5,10 +5,8 @@ body {
 }
 
 .container {
-  position: fixed;
   display: flex;
   flex-wrap: wrap;
-  height: 100vh;
   justify-content: center;
 }
 
@@ -17,6 +15,8 @@ body {
 }
 
 .left-background {
+  display: block;
+  width: fit-content;
   height: 100vh;
 }
 
